@@ -1,0 +1,14 @@
+// Horizontal rule/divider
+
+hr {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    margin: 20px 0;
+    border: 0;
+    background-color: $grey;
+
+    &.thick {
+        height: 4px;
+    }
+}

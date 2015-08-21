@@ -1,0 +1,57 @@
+.search-bar {
+    position: relative;
+    width: 100%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    background-color: lighten($lightgrey, 30%);
+
+    @include border-box;
+    @include clearfix;
+
+    .input-group {
+        margin: 0;
+        z-index: 15;
+        @include transition(width, 0.2s, ease);
+
+        input.search-field {
+            border: 0;
+            font-size: 14px;
+            padding: 8px 8px 8px 40px;
+            background-position: 10px center;
+            background-repeat: no-repeat;
+            background-image: url($chemistry-image-path + '/search-icon.svg');
+            background-size: 16px;
+
+            &:focus {
+                border:0;
+            }
+        }
+    }
+    .cancel-button {
+        position: absolute;
+        top: 8px;
+        right: 20px;
+        padding: 8px 12px;
+        margin: 0;
+        opacity: 0;
+        background-color: transparent;
+
+        font-weight: bold;
+        color: $blue;
+
+        -webkit-transition: 0.2s opacity ease;
+        transition: 0.2s opacity ease;
+
+        -webkit-transition-delay: 0.2s;
+        transition-delay: 0.2s;
+    }
+    &.active {
+
+        .input-group {
+            width: calc(100% - 82px);
+        }
+        .cancel-button {
+            opacity: 1;
+        }
+    }
+}

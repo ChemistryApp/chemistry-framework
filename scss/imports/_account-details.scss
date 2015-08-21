@@ -1,0 +1,61 @@
+.account-details-header {
+    position: relative;
+    width: 100%;
+    margin-bottom: 60px;
+
+    @include clearfix;
+
+    .information {
+        position: relative;
+        width: 50%;
+        float: left;
+        border-right: 1px solid $grey;
+
+        @include clearfix;
+        @include border-box;
+
+        .monogram {
+            position: relative;
+            float: left;
+            height: 100px;
+            width: 100px;
+            background-color: $blue;
+
+            color: white;
+            font-size: 38px;
+            font-weight: 300;
+            line-height: normal;
+
+            @include flex;
+        }
+        .information-listing {
+            position: relative;
+            width: calc(100% - 130px);
+            float: right;
+            margin-right: 20px;
+
+            h4 {
+                color: $grey;
+                font-weight: 600;
+                margin-bottom: 14px;
+            }
+            p {
+                color: $grey;
+                margin: 5px 0;
+                font-size: 12px;
+            }
+        }
+    }
+    .last-updated {
+        position: relative;
+        width: 50%;
+        height: 100px;
+        float: right;
+
+        color: $blue;
+        text-align: center;
+        font-size: 22px;
+
+        @include flex;
+    }
+}

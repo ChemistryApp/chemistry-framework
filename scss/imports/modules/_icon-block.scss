@@ -1,0 +1,37 @@
+.icon-block {
+    position: relative;
+    width: 120px;
+    padding: 8px 0;
+    border: 1px solid transparent;
+
+    @include border-box;
+
+    &.is-button {
+        cursor: pointer;
+
+        &:hover {
+            border: 1px solid $lightgrey;
+        }
+        &.active {
+            background-color: #CCC;
+        }
+    }
+    .icon-mount {
+        position: relative;
+        height: 50px;
+        width: 50px;
+        margin: 0 auto 10px;
+        background-color: $blue;
+
+        @include flex;
+
+        color: white;
+        font-size: 30px;
+    }
+    .label {
+        position: relative;
+        font-size: 13px;
+        text-align: center;
+        line-height: 140%;
+    }
+}

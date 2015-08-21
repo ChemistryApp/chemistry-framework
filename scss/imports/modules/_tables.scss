@@ -1,0 +1,155 @@
+// BASIC TABLE LISTING
+table {
+    width: 100%;
+    margin: 20px 0;
+    color: $grey;
+
+    thead {
+        width: 100%;
+        font-weight: 600;
+        font-size: 14px;
+        border-top: 1px solid $grey;
+        padding-bottom: 20px;
+
+        tr {
+            width: 100%;
+
+            th {
+                padding: 10px 60px 0 10px;
+                text-align: left;
+                border-right: 1px solid $grey;
+
+                @include border-box;
+
+                &:last-of-type {
+                    border-right: none;
+                }
+            }
+        }
+    }
+    tbody {
+        position: relative;
+        width: 100%;
+        font-size: 16px;
+
+        tr {
+            width: 100%;
+            background-color: #FFF;
+
+            &:first-of-type {
+
+                td {
+                    padding-top: 40px;
+                }
+            }
+            &:nth-child(even) {
+                background-color: #f6f6f7;
+            }
+            td {
+                padding: 18px 20px;
+                vertical-align: middle;
+
+                &.bold {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    &.select {
+
+        tbody {
+
+            tr {
+                cursor: pointer;
+
+                &:hover {
+                    background-color: darken(#FFF, 3.5%);
+                }
+                &:nth-child(even) {
+
+                    &:hover {
+                        background-color: darken(#f6f6f7, 3.5%);
+                    }
+                }
+            }
+        }
+    }
+    &.edit {
+
+        i.delete-icon {
+            font-size: 34px;
+            color: #de6251;
+        }
+        thead {
+
+            tr {
+
+                th.delete {
+                    display: none;
+                    padding-bottom: 15px;
+                }
+            }
+        }
+        tbody {
+
+            tr {
+
+                td {
+                    i {
+                        display: none;
+                    }
+                    &.delete {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &.editing {
+
+            i.delete-icon {
+                margin: -12px 0 -16px;
+                cursor: pointer;
+            }
+            thead {
+
+                tr {
+
+                    th.delete {
+                        display: block;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                }
+            }
+            tbody {
+
+                tr {
+
+                    td {
+                        i {
+                            display: inline-block;
+                        }
+                        &.delete {
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            display: block;
+                        }
+                        &.status {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// TABLE LIST SECTION
+.table-list {
+    position: relative;
+    padding: 20px 0px;
+
+    h1.heading {
+        font-size: 18px;
+    }
+}

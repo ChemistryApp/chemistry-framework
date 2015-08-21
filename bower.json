@@ -1,0 +1,33 @@
+{
+  "name": "chemistry-framework",
+  "version": "0.1.0",
+  "homepage": "https://github.com/ChemistryApp/chemistry-framework",
+  "authors": [
+    "Doug Niccum <dniccum@ingenology.com>"
+  ],
+  "repository": {
+      "type": "git",
+      "url": "git@github.com:ChemistryApp/chemistry-framework.git"
+  },
+  "description": "A front-end framework with assets to be able to scaffold and prototype screens for the Chemistry iPad application.",
+  "main": [
+      "scss/chemistry.scss",
+      "images/*"
+  ],
+  "keywords": [
+    "chemistry",
+    "platform",
+    "framework"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ionicons": "~2.0.1"
+  }
+}

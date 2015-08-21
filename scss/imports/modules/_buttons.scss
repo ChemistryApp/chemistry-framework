@@ -1,0 +1,128 @@
+// BASIC BUTTON
+button, .button {
+    position: relative;
+    display: inline-block;
+    padding: 8px 42px;
+    margin: 0 10px;
+    border: 0;
+    outline: none;
+    background-color: $grey;
+    cursor: pointer;
+
+    @include border-radius(0);
+
+    font-family: 'Merriweather Sans', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+
+    -webkit-transition: background-color 0.15s ease, color 0.15s ease;
+    -moz-transition: background-color 0.15s ease, color 0.15s ease;
+    -ms-transition: background-color 0.15s ease, color 0.15s ease;
+    -o-transition: background-color 0.15s ease, color 0.15s ease;
+    transition: background-color 0.15s ease, color 0.15s ease;
+
+    &:hover, &:focus {
+        background-color: darken($grey, 5%);
+    }
+    &.green {
+        background-color: $green;
+
+        &:hover, &:focus {
+            background-color: darken($green, 5%);
+        }
+    }
+    &.blue {
+        background-color: $blue;
+
+        &:hover, &:focus {
+            background-color: darken($blue, 5%);
+        }
+    }
+    &.clear {
+        background: transparent;
+        border: none;
+        color: $blue;
+
+        &:hover {
+            background-color: lighten($lightgrey, 30%);
+        }
+    }
+    &.outline {
+        background-color: transparent;
+        color: $grey;
+        border: 1px solid $grey;
+
+        &.blue {
+            color: $blue;
+            border-color: $blue;
+
+            &:hover {
+                color: white;
+            }
+            &.active {
+                background-color: $blue;
+                color: white;
+            }
+        }
+    }
+    &.large {
+        padding: 20px 28px;
+    }
+    &.icon-left {
+        padding-left: 14px;
+        padding-right: 10px;
+
+        i  {
+            float: left;
+        }
+    }
+    &.icon-right {
+        padding-left: 10px;
+        padding-right: 14px;
+
+        i  {
+            float: right;
+        }
+    }
+}
+
+// BUTTON GROUP
+.button-block {
+    position: relative;
+    width: 100%;
+
+    @include clearfix;
+}
+.button-group {
+    position: relative;
+    text-align: left;
+    padding: 10px 0;
+
+    button, .button {
+        margin-left: 0;
+    }
+    &.right-align {
+        text-align: right;
+
+        button, .button {
+            margin-left: 10px;
+            margin-right: 0;
+        }
+    }
+    &.left-align {
+        text-align: left;
+
+        button, .button {
+            margin-right: 10px;
+            margin-left: 0;
+        }
+    }
+    &.pull-left {
+        float: left;
+    }
+    &.pull-right {
+        float: right;
+    }
+}

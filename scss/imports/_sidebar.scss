@@ -1,0 +1,122 @@
+// SIDEBAR
+sidebar, .sidebar {
+    position: absolute;
+    height: 100%;
+    width: 24%;
+    left: 0;
+    top: 0;
+    background-color: #0b2937;
+    overflow: hidden !important;
+
+    header {
+        position: relative;
+        width: 100%;
+        height: 90px;
+        @include gradient(#165876, #103749);
+
+        .image {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-position: center center;
+            background-size: 74%;
+            background-repeat: no-repeat;
+            background-image: url($chemistry-image-path + '/chemistry-logo.svg');
+        }
+    }
+    .sidebar-content {
+        position: absolute;
+        width: 100%;
+        height: calc(100% - 90px);
+        left: 0;
+        bottom: 0;
+    }
+
+    // SIDEBAR AVATAR BOX
+    sidebar-avatar, .sidebar-avatar {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        background-color: #0c2f40;
+
+        @include flex;
+
+        .inner-wrapper {
+            position: relative;
+            padding: 23px 0;
+
+            @include clearfix;
+
+            .avatar {
+                position: relative;
+                float: left;
+                height: 54px;
+                width: 54px;
+                overflow: hidden;
+
+                @include border-radius(27px);
+            }
+            .name {
+                position: relative;
+                float: right;
+                width: 100px;
+                margin: 10px 0 0 12px;
+
+                color: white;
+                font-size: 12px;
+                line-height: 140%;
+            }
+        }
+    }
+
+    // SIDEBAR LINK LIST
+    link-list, .link-list {
+        position: relative;
+        margin: 0 0 40px;
+
+        .link {
+            display: block;
+            padding: 7.5% 30px;
+            color: #8C979d;
+            line-height: normal;
+            font-weight: 500;
+            text-align: center;
+            font-size: 16px;
+            text-decoration: none;
+
+            @include border-box;
+
+            &.active {
+                color: white;
+                background: #345361; /* Old browsers */
+                background: -moz-radial-gradient(center, ellipse cover,  #345361 65%, #26404e 100%); /* FF3.6+ */
+                background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(65%,#345361), color-stop(100%,#26404e)); /* Chrome,Safari4+ */
+                background: -webkit-radial-gradient(center, ellipse cover,  #345361 65%,#26404e 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-radial-gradient(center, ellipse cover,  #345361 65%,#26404e 100%); /* Opera 12+ */
+                background: -ms-radial-gradient(center, ellipse cover,  #345361 65%,#26404e 100%); /* IE10+ */
+                background: radial-gradient(ellipse at center,  #345361 65%,#26404e 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#345361', endColorstr='#26404e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1023px) {
+
+    sidebar, .sidebar {
+
+        header {
+
+            .image {
+                background-size: 20%;
+                background-image: url($chemistry-image-path + '/images/chemistry-logo-small.svg');
+            }
+        }
+    }
+
+}
