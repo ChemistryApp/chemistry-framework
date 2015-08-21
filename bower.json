@@ -9,6 +9,7 @@
       "type": "git",
       "url": "git@github.com:ChemistryApp/chemistry-framework.git"
   },
+  "private": false,
   "description": "A front-end framework with assets to be able to scaffold and prototype screens for the Chemistry iPad application.",
   "main": [
       "scss/chemistry.scss",
