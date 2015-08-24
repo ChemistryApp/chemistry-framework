@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "Merriweather Sans";
+    src: url("#{$chemistry-font-path}/merriweathersans-light-webfont.eot");
+    src: local(Merriweather Sans Light),
+        url("#{$chemistry-font-path}/merriweathersans-light-webfont.eot?#iefix") format("embedded-opentype")
+        url("#{$chemistry-font-path}/merriweathersans-light-webfont.woff2") format("woff2"),
+        url("#{$chemistry-font-path}/merriweathersans-light-webfont.woff") format("woff"),
+        url("#{$chemistry-font-path}/merriweathersans-light-webfont.ttf") format("truetype"),
+        url("#{$chemistry-font-path}/merriweathersans-light-webfont.svg#merriweather_sansbook") format("svg");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Merriweather Sans";
+    src: url("#{$chemistry-font-path}/merriweathersans-lightitalic-webfont.eot");
+    src: local(Merriweather Sans Light Italic),
+        url("#{$chemistry-font-path}/merriweathersans-lightitalic-webfont.eot?#iefix") format("embedded-opentype")
+        url("#{$chemistry-font-path}/merriweathersans-lightitalic-webfont.woff2") format("woff2"),
+        url("#{$chemistry-font-path}/merriweathersans-lightitalic-webfont.woff") format("woff"),
+        url("#{$chemistry-font-path}/merriweathersans-lightitalic-webfont.ttf") format("truetype"),
+        url("#{$chemistry-font-path}/merriweathersans-lightitalic-webfont.svg#merriweather_sansbookitalic") format("svg");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Merriweather Sans";
+    src: url("#{$chemistry-font-path}/merriweathersans-regular-webfont.eot");
+    src: local(Merriweather Sans),
+        url("#{$chemistry-font-path}/merriweathersans-regular-webfont.eot?#iefix") format("embedded-opentype")
+        url("#{$chemistry-font-path}/merriweathersans-regular-webfont.woff2") format("woff2"),
+        url("#{$chemistry-font-path}/merriweathersans-regular-webfont.woff") format("woff"),
+        url("#{$chemistry-font-path}/merriweathersans-regular-webfont.ttf") format("truetype"),
+        url("#{$chemistry-font-path}/merriweathersans-regular-webfont.svg#merriweather_sansregular") format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Merriweather Sans";
+    src: url("#{$chemistry-font-path}/merriweathersans-italic-webfont.eot");
+    src: local(Merriweather Sans Italic),
+        url("#{$chemistry-font-path}/merriweathersans-italic-webfont.eot?#iefix") format("embedded-opentype")
+        url("#{$chemistry-font-path}/merriweathersans-italic-webfont.woff2") format("woff2"),
+        url("#{$chemistry-font-path}/merriweathersans-italic-webfont.woff") format("woff"),
+        url("#{$chemistry-font-path}/merriweathersans-italic-webfont.ttf") format("truetype"),
+        url("#{$chemistry-font-path}/merriweathersans-italic-webfont.svg#merriweather_sansitalic") format("svg");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Merriweather Sans";
+    src: url("#{$chemistry-font-path}/merriweathersans-bold-webfont.eot");
+    src: local(Merriweather Sans Bold),
+        url("#{$chemistry-font-path}/merriweathersans-bold-webfont.eot?#iefix") format("embedded-opentype")
+        url("#{$chemistry-font-path}/merriweathersans-bold-webfont.woff2") format("woff2"),
+        url("#{$chemistry-font-path}/merriweathersans-bold-webfont.woff") format("woff"),
+        url("#{$chemistry-font-path}/merriweathersans-bold-webfont.ttf") format("truetype"),
+        url("#{$chemistry-font-path}/merriweathersans-bold-webfont.svg#merriweather_sansbold") format("svg");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Merriweather Sans";
+    src: url("#{$chemistry-font-path}/merriweathersans-bolditalic-webfont.eot");
+    src: local(Merriweather Sans Bold Italic),
+        url("#{$chemistry-font-path}/merriweathersans-bolditalic-webfont.eot?#iefix") format("embedded-opentype")
+        url("#{$chemistry-font-path}/merriweathersans-bolditalic-webfont.woff2") format("woff2"),
+        url("#{$chemistry-font-path}/merriweathersans-bolditalic-webfont.woff") format("woff"),
+        url("#{$chemistry-font-path}/merriweathersans-bolditalic-webfont.ttf") format("truetype"),
+        url("#{$chemistry-font-path}/merriweathersans-bolditalic-webfont.svg#merriweather_sansbold_italic") format("svg");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Merriweather Sans";
+    src: url("#{$chemistry-font-path}/merriweathersans-extrabold-webfont.eot");
+    src: local(Merriweather Sans Extra-Bold),
+        url("#{$chemistry-font-path}/merriweathersans-extrabold-webfont.eot?#iefix") format("embedded-opentype")
+        url("#{$chemistry-font-path}/merriweathersans-extrabold-webfont.woff2") format("woff2"),
+        url("#{$chemistry-font-path}/merriweathersans-extrabold-webfont.woff") format("woff"),
+        url("#{$chemistry-font-path}/merriweathersans-extrabold-webfont.ttf") format("truetype"),
+        url("#{$chemistry-font-path}/merriweathersans-extrabold-webfont.svg#merriweather_sansextrabold") format("svg");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Merriweather Sans";
+    src: url("#{$chemistry-font-path}/merriweathersans-bolditalic-webfont.eot");
+    src: local(Merriweather Sans Extra-Bold Italic),
+        url("#{$chemistry-font-path}/merriweathersans-extrabolditalic-webfont.eot?#iefix") format("embedded-opentype")
+        url("#{$chemistry-font-path}/merriweathersans-extrabolditalic-webfont.woff2") format("woff2"),
+        url("#{$chemistry-font-path}/merriweathersans-extrabolditalic-webfont.woff") format("woff"),
+        url("#{$chemistry-font-path}/merriweathersans-extrabolditalic-webfont.ttf") format("truetype"),
+        url("#{$chemistry-font-path}/merriweathersans-extrabolditalic-webfont.svg#merriweather_sansXBdIt") format("svg");
+    font-weight: 800;
+    font-style: italic;
+}
