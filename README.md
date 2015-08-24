@@ -7,11 +7,19 @@ A front-end framework with assets to be able to scaffold and prototype screens f
 
 ### Fonts
 
-It is recommended that you use the Merriweather Sans typeface from [Google Fonts](https://www.google.com/fonts/specimen/Merriweather+Sans). If desired, add the link to your header and redefine the body font-family like so:
+This framework utilizes the [Merriweather Sans](https://www.google.com/fonts/specimen/Merriweather+Sans) typeface family from [Google Fonts](https://www.google.com/fonts).
+
+If you would like to use a different typeface, you will need to redefine the global font-family for 3 elements:
+
+* body
+* button, .button
+* input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="number"], textarea
+
+like so:
 
 ```
-body {
-    font-family: 'YOUR FONT NAME', sans-serif;
+[ELEMENT] {
+    font-family: '[YOUR FONT NAME]', sans-serif;
 }
 ```
 
