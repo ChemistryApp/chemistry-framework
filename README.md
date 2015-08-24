@@ -1,5 +1,7 @@
 # Chemistry Framework
 
+[![GitHub version](https://badge.fury.io/gh/ChemistryApp%2Fchemistry-framework.svg)](http://badge.fury.io/gh/ChemistryApp%2Fchemistry-framework)
+
 A front-end framework with assets to be able to scaffold and prototype screens for the Chemistry iPad application.
 
 ### Fonts
