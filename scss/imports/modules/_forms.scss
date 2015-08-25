@@ -152,6 +152,28 @@ form {
             button:first-of-type, .button:first-of-type {
                 margin-left: 20%;
             }
+
+            // autocomplete reset
+            .angucomplete-holder {
+
+                input[type="text"] {
+                    width: 80%;
+                    float: right;
+
+                    @include border-box;
+                }
+                .angucomplete-dropdown {
+                    width: 80%;
+                    margin-top: 0;
+                    left: 20%;
+                    top: 44px !important;
+                    @include border-box;
+
+                    .angucomplete-selected-row {
+                        background-color: $blue;
+                    }
+                }
+            }
         }
         .dropdown {
             margin-left: 20%;
